@@ -1,23 +1,17 @@
-# ICDE22-PeGaSus
+# Personalized Graph Summarization: Formulation, Scalable Algorithms, and Applications
 
 ## Overview
-...
+* *Problem Formulation*: We introduce a new problem, *personalized graph Summarization*, and demonstrate the usefulness of personalizing summary graphs.
 
-* *A*: A
+* *Algorithm Design*: We propose *PeGaSus* (**Pe**rsonalized **G**r**a**ph **Su**mmarization with **S**calability), a linear-time solver for the problem. We show empirically that it scales to a graph with one billion edges.
 
-* *B*: B
-
-* *C*: C
-
-## Appendix
-The online-appendix is available at [Here](Insert Link)
-
+* *Extensive Experiments*: We exhibit the effectiveness of PeGaSus, and its applicability to *distributed multi-query answering* using six real-world graphs.
 
 ## Code
-The algorithms used in the paper is available at ```./code/```.
+The algorithms used in the paper is available at ```./PeGaSus/```.
 
 
-## Datasets (TO BE EDITED)
+## Datasets
 
 |Name|#Nodes|#Edges|Summary|Source|Download|
 |:---:|:---:|:---:|:---:|:---:|:---:|
