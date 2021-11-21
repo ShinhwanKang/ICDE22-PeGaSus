@@ -1,7 +1,7 @@
 # Personalized Graph Summarization: Formulation, Scalable Algorithms, and Applications
 
 ## Overview
-* *Problem Formulation*: We introduce a new problem, *personalized graph Summarization*, and demonstrate the usefulness of personalizing summary graphs.
+* *Problem Formulation*: We introduce a new problem, *personalized graph summarization*, and demonstrate the usefulness of personalizing summary graphs.
 
 * *Algorithm Design*: We propose *PeGaSus* (**Pe**rsonalized **G**r**a**ph **Su**mmarization with **S**calability), a linear-time solver for the problem. We show empirically that it scales to a graph with one billion edges.
 
