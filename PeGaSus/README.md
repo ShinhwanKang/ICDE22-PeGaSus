@@ -6,11 +6,11 @@
 
 ## Input Format
 
-PeGaSus assumes that the input graph *G = (**V**, **E**)* is undirected without self-loops.
+PeGaSus assumes that the input graph G = (**V**, **E**) is undirected without self-loops.
 The format of the example file is given below.
 Each line represents an edge.
-Each edge *{u, v} ∈ **E*** joins two distinct nodes *u != v ∈ **V***, separated by a tab.
-Each node *v ∈ **V*** is assigned to a unique integer id.
+Each edge {u, v} ∈ **E** joins two distinct nodes u != v ∈ **V**, separated by a tab.
+Each node v ∈ **V** is assigned to a unique integer id.
 
 ### Example Input Format
 ```
@@ -22,9 +22,9 @@ Each node *v ∈ **V*** is assigned to a unique integer id.
 
 ## Target Node Set Format
 
-PeGaSus personalizes a summary graph for a target node set *T $\subset$ **V***.
+PeGaSus personalizes a summary graph for a target node set T $\subset$ **V**.
 The format of the example file is given below.
-Each line represents a node *v ∈ **V*** with a unique integer id.
+Each line represents a node v ∈ **V** with a unique integer id.
 ### Example Input Format
 ```
     4721
@@ -53,7 +53,7 @@ java -jar PeGaSus.jar ./data/lastfm_asia.txt 0.5 ./data/lastfm_asia_TNS.txt true
 ## Output Format
 
 The output file contains information about nodes (nodes in *G*) belonging to each
-supernode *s ∈ **S*** of the output summary graph *$\bar{G}$ = (**S**, **P**)* and information about each superedge *p ∈ **P***. 
+supernode **S** of the output summary graph $\bar{G}$ = (**S**, **P**) and information about each superedge **P**. 
 The first integer on each line following the line "\<Node of Each Supernode\>" represents the id of the supernode, and the following integers separated by tabs represent the ids of the subnodes belonging to that supernode.
 Each line following  the line "\<Superedge Info\>" represents a single superedge. 
 The two integers separated by tabs represent the id of the source supernode and the id of the destination supernode.
