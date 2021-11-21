@@ -49,7 +49,7 @@ Each node v ∈ **V** is assigned to a unique integer id.
 PeGaSus personalizes a summary graph for a target node set T $\subset$ **V**.
 The format of the example file is given below.
 Each line contains the unique id of a node v ∈ V.
-### Example Input Format
+### Example Target Node Set Format
 ```
     4721
     274
