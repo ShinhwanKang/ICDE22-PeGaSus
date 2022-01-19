@@ -12,7 +12,7 @@
 The revised paper is available at [Here](./OnlineAppendix.pdf).
 
 ## Online Appendix
-The online appendix is available at [Here](./Revised.pdf).
+The online appendix is available at [Here](./RevisedPaper.pdf).
 
 
 ## Code
