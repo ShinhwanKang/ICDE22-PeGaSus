@@ -9,10 +9,10 @@
 
 
 ## Revised Paper
-The revised paper is available at [Here](./Personalized_Summarization_of_Massive_Graphs(OnlineAppendix).pdf).
+The revised paper is available at [Here](./OnlineAppendix.pdf).
 
 ## Online Appendix
-The online appendix is available at [Here](./Personalized_Summarization_of_Massive_Graphs(Revised).pdf).
+The online appendix is available at [Here](./Revised.pdf).
 
 
 ## Code
