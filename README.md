@@ -9,10 +9,10 @@
 
 
 ## Revised Paper
-The revised paper is available at [Here](./_ICDE22__Personalized_Summarization_of_Massive_Graphs(OnlineAppendix)).
+The revised paper is available at [Here](./_ICDE22__Personalized_Summarization_of_Massive_Graphs(OnlineAppendix).pdf).
 
 ## Online Appendix
-The online appendix is available at [Here](./_ICDE22__Personalized_Summarization_of_Massive_Graphs(Revised)).
+The online appendix is available at [Here](./_ICDE22__Personalized_Summarization_of_Massive_Graphs(Revised).pdf).
 
 
 ## Code
