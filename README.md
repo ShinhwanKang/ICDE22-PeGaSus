@@ -7,6 +7,14 @@
 
 - Extensive Experiments: We exhibit the effectiveness of PeGaSus and its applicability to distributed multi-query answering using six real-world graphs.
 
+
+## Revised Paper
+The revised paper is available at [Here](./_ICDE22__Personalized_Summarization_of_Massive_Graphs(OnlineAppendix)).
+
+## Online Appendix
+The online appendix is available at [Here](./_ICDE22__Personalized_Summarization_of_Massive_Graphs(Revised)).
+
+
 ## Code
 The algorithms used in the paper is available at ```./PeGaSus/```.
 
