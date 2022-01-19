@@ -68,7 +68,7 @@ Each line contains the unique id of a node v ∈ V.
 ## Execution
 
 ```
-java -jar PeGaSus.jar [data path] [target compression ratio] [target node set file path] [checking personalized error] [saving summary graph] [alpha]
+java -jar PeGaSus.jar [data path] [target compression ratio] [target node set file path] [checking personalized error] [saving summary graph] [alpha] [beta]
 ```
 
 ### argument
@@ -77,10 +77,11 @@ java -jar PeGaSus.jar [data path] [target compression ratio] [target node set fi
 - target node set file path: path to the target node set file
 - checking personalized error: if **true**, compute the personalized error. Otherwise, not.
 - saving summary graph: if **true**, save a summary graph. Otherwise, not.
-- alpha: the degree of personalization
+- alpha: degree of personalization
+- beta: parameter for the adaptive thresholding
 
 ```
-java -jar PeGaSus.jar ./data/lastfm_asia.txt 0.5 ./data/lastfm_asia_TNS.txt true true 1.25   
+java -jar PeGaSus.jar ./data/lastfm_asia.txt 0.5 ./data/lastfm_asia_TNS.txt true true 1.25 0.1
 ```
 ## Output Format
 
@@ -98,6 +99,7 @@ The two integers separated by tabs represent the id of the source supernode and 
     is Checking Personalized Error: true
     is Saving Summary Graph: true
     Alpha: 1.25
+    Beta: 0.1
     |V|:    7624
     |E|:    27806
     TopNDrop

@@ -26,6 +26,11 @@ public class RUN {
         double alpha = Double.parseDouble(args[5]);
         System.out.println("Alpha: " + alpha);
 
+        double beta = Double.parseDouble(args[6]);
+        System.out.println("Beta: " + beta);
+
+
+
         double start = System.currentTimeMillis();
         IntArrayList targetNodeSet = readSeedNodeSet(targetNodeSetFileName);
         if(targetNodeSet.size() == 0) {
@@ -34,7 +39,7 @@ public class RUN {
         }
 
         // If you want to compute a personalized error for some node, you replace null to IntArrayList containing the nodes.
-        PeGaSus m = new PeGaSus(targetNodeSet, targetRatio, alpha, null);
+        PeGaSus m = new PeGaSus(targetNodeSet, targetRatio, alpha, beta, null);
 
         Int2IntOpenHashMap[] subAdj = null;
         if(isCheckPersonalizedErr) {
@@ -64,7 +69,7 @@ public class RUN {
         f = new File(outputPath + File.separator+"summary_graph.txt");
         try {
             FileWriter fw = new FileWriter(f);
-            fw.write("<Subnode of each supernode>");
+            fw.write("<Node of Each Supernode>");
             fw.write(System.getProperty( "line.separator" ));
             for (int sup_v : sumG.snList) {
                 fw.write(String.format("%d", sup_v));
@@ -73,7 +78,7 @@ public class RUN {
                 }
                 fw.write(System.getProperty( "line.separator" ));
             }
-            fw.write("<Superedge info>");
+            fw.write("<Superedge Info>");
             fw.write(System.getProperty( "line.separator" ));
             for(int sup_v: sumG.snList){
                 for(Int2DoubleOpenHashMap.Entry x : sumG.superEdgeCntW[sup_v].int2DoubleEntrySet()){

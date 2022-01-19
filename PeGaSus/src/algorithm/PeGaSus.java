@@ -49,6 +49,7 @@ public class PeGaSus{
     PriorityQueue<Double> stayValue = new PriorityQueue<>(Collections.reverseOrder());
 
     public double alpha;
+    public double beta;
     public double[] alphaList;
 
     double log2(double a){
@@ -61,7 +62,7 @@ public class PeGaSus{
     }
 
 
-    public PeGaSus(IntArrayList _targetNodeSet, double _targetRatio, double _alpha, IntArrayList _testNodeSet){
+    public PeGaSus(IntArrayList _targetNodeSet, double _targetRatio, double _alpha, double _beta, IntArrayList _testNodeSet){
         targetNodeSetID = _targetNodeSet.clone();
         if(_testNodeSet != null){
             testNodeSetID = _testNodeSet.clone();
@@ -73,6 +74,7 @@ public class PeGaSus{
         cntFlag = 0;
 
         alpha =_alpha;
+        beta = _beta;
     }
 
     public double getInitialSize(){
@@ -566,7 +568,7 @@ public class PeGaSus{
         double it = 1 ;
 
         int thresholdIdx;
-        double thresholdRatio =  0.1;
+        double thresholdRatio =  beta;
         threshold = 0.5;
         while(true){
 //            System.out.println("Iter\t"+it+"\tCompression Ratio\t"+(getSummarySize()/getInitialSize()));
