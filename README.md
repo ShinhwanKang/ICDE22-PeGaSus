@@ -9,10 +9,10 @@
 
 
 ## Revised Paper
-The revised paper is available at [Here](./RevisedPaper.pdf).
+The revised paper is available at [Here](./RevisedPaper.pdf). If a preview does not appear properly, please download this file.
 
 ## Online Appendix
-The online appendix is available at [Here](./OnlineAppendix.pdf).
+The online appendix is available at [Here](./OnlineAppendix.pdf). If a preview does not appear properly, please download this file.
 
 
 ## Code
