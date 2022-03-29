@@ -54,7 +54,7 @@ Each node v ∈ **V** is assigned to a unique integer id.
 
 ## Target Node Set Format
 
-PeGaSus personalizes a summary graph for a target node set T ⊂ **V**.
+PeGaSus personalizes a summary graph for a target node set T $\subseteq$ **V**.
 The format of the example file is given below.
 Each line contains the unique id of a node v ∈ V.
 ### Example Target Node Set Format
@@ -78,7 +78,7 @@ java -jar PeGaSus.jar [data path] [target compression ratio] [target node set fi
 - checking personalized error: if **true**, compute the personalized error. Otherwise, not.
 - saving summary graph: if **true**, save a summary graph. Otherwise, not.
 - alpha: degree of personalization
-- beta: parameter for the adaptive thresholding
+- beta: parameter for adaptive thresholding
 
 ```
 java -jar PeGaSus.jar ./data/lastfm_asia.txt 0.5 ./data/lastfm_asia_TNS.txt true true 1.25 0.1
@@ -87,7 +87,7 @@ java -jar PeGaSus.jar ./data/lastfm_asia.txt 0.5 ./data/lastfm_asia_TNS.txt true
 
 The output file contains information about nodes (nodes in *G*) belonging to each
 supernode **S** of the output summary graph $\bar{G}$ = (**S**, **P**) and information about each superedge **P**. 
-The first integer on each line following the line "\<Node of Each Supernode\>" represents the id of the supernode, and the following integers separated by tabs represent the ids of the nodes belonging to that supernode.
+The first integer on each line following the line "\<Nodes in Each Supernode\>" represents the id of the supernode, and the following integers separated by tabs represent the ids of the nodes belonging to that supernode.
 Each line following  the line "\<Superedge Info\>" represents a single superedge. 
 The two integers separated by tabs represent the id of the source supernode and the id of the destination supernode.
 
@@ -110,7 +110,7 @@ The two integers separated by tabs represent the id of the source supernode and 
 
 * Output file
 ```
-    <Node of Each Supernode>
+    <Nodes in Each Supernode>
     2569	3145	2225	3975	2306    498 428 1464
     2775	5346	2162	4012	3774
     .

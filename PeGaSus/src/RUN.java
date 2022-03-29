@@ -69,7 +69,7 @@ public class RUN {
         f = new File(outputPath + File.separator+"summary_graph.txt");
         try {
             FileWriter fw = new FileWriter(f);
-            fw.write("<Node of Each Supernode>");
+            fw.write("<Nodes in Each Supernode>");
             fw.write(System.getProperty( "line.separator" ));
             for (int sup_v : sumG.snList) {
                 fw.write(String.format("%d", sup_v));
