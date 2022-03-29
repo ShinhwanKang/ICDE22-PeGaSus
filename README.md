@@ -1,4 +1,4 @@
-# Personalized Graph Summarization: Formulation, Scalable Algorithms, and Applications
+# [ICDE 22] Personalized Graph Summarization: Formulation, Scalable Algorithms, and Applications
 
 ## Overview
 - Problem Formulation: We introduce a new problem, personalized graph summarization, and demonstrate the usefulness of personalizing summary graphs.
@@ -8,8 +8,8 @@
 - Extensive Experiments: We exhibit the effectiveness of PeGaSus and its applicability to distributed multi-query answering using six real-world graphs.
 
 
-## Revised Paper
-The revised paper is available at [Here](./RevisedPaper.pdf). If a preview does not appear properly, please download this file.
+## Main Paper
+The main paper is available at [Here](./paper.pdf). If a preview does not appear properly, please download this file.
 
 ## Online Appendix
 The online appendix is available at [Here](./OnlineAppendix.pdf). If a preview does not appear properly, please download this file.
