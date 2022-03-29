@@ -86,7 +86,7 @@ java -jar PeGaSus.jar ./data/lastfm_asia.txt 0.5 ./data/lastfm_asia_TNS.txt true
 ## Output Format
 
 The output file contains information about nodes (nodes in *G*) belonging to each
-supernode **S** of the output summary graph $\overline{G}$ = (**S**, **P**) and information about each superedge **P**. 
+supernode **S** of the output summary graph G<sup>-</sup> = (**S**, **P**) and information about each superedge **P**. 
 The first integer on each line following the line "\<Nodes in Each Supernode\>" represents the id of the supernode, and the following integers separated by tabs represent the ids of the nodes belonging to that supernode.
 Each line following  the line "\<Superedge Info\>" represents a single superedge. 
 The two integers separated by tabs represent the id of the source supernode and the id of the destination supernode.
